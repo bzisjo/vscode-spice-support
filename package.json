@@ -1,0 +1,25 @@
+{
+    "name": "vscode-spice-support",
+    "displayName": "vscode-spice-support",
+    "description": "SPICE",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "spice",
+            "aliases": ["SPICE", "spice"],
+            "extensions": [".ckt",".sp",".net",".cir",".mod",".mdl",".lib",".sub",".scs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "spice",
+            "scopeName": "source.sp",
+            "path": "./syntaxes/SPICE.tmLanguage"
+        }]
+    }
+}
