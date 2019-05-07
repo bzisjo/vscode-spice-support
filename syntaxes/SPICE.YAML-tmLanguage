@@ -41,11 +41,11 @@ patterns:
         name: string.quoted.double.sp
     -
         comment: Devices
-        match: '^[\s]*(?i:c|d|j|k|l|m|n|o|p|q|r|s|t|u|w|y|z)[a-zA-Z0-9_@]+'
+        match: '^[\s]*(?i:c|d|j|k|l|m|n|o|p|q|r|s|t|u|w|y|z)[a-zA-Z0-9_@<:>]+'
         name: entity.name.function.sp
     -
         comment: Sources
-        match: '^[\s]*(?i:b|e|f|g|h|v|i)[a-zA-Z0-9_@]+'
+        match: '^[\s]*(?i:b|e|f|g|h|v|i)[a-zA-Z0-9_@<:>]+'
         name: entity.name.type.sp
     -
         comment: Sub-circuits

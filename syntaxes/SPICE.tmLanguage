@@ -79,7 +79,7 @@
         <key>comment</key>
         <string>Devices</string>
         <key>match</key>
-        <string>^[\s]*(?i:c|d|j|k|l|m|n|o|p|q|r|s|t|u|w|y|z)[a-zA-Z0-9_@]+</string>
+        <string>^[\s]*(?i:c|d|j|k|l|m|n|o|p|q|r|s|t|u|w|y|z)[a-zA-Z0-9_@<:>]+</string>
         <key>name</key>
         <string>entity.name.function.sp</string>
       </dict>
@@ -87,7 +87,7 @@
         <key>comment</key>
         <string>Sources</string>
         <key>match</key>
-        <string>^[\s]*(?i:b|e|f|g|h|v|i)[a-zA-Z0-9_@]+</string>
+        <string>^[\s]*(?i:b|e|f|g|h|v|i)[a-zA-Z0-9_@<:>]+</string>
         <key>name</key>
         <string>entity.name.type.sp</string>
       </dict>
