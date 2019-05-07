@@ -1,10 +1,27 @@
 {
     "name": "vscode-spice-support",
-    "displayName": "vscode-spice-support",
-    "description": "SPICE",
+    "displayName": "SPICE - Language Support",
+    "description": "Language support for various flavors of SPICE",
     "version": "0.0.1",
+    "publisher": "bzisjo",
+    "author": {
+        "name": "Jonathan Wang",
+        "email": "bzisjo@gmail.com"
+    },
     "engines": {
         "vscode": "^1.33.0"
+    },
+    "license": "MIT",
+    "keywords": [
+        "spice",
+        "syntax",
+        "highlighting",
+        "circuit"
+    ],
+    "icon": "icon.gif",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bzisjo/vscode-spice-support"
     },
     "categories": [
         "Programming Languages",
