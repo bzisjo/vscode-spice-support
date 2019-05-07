@@ -1,0 +1,109 @@
+fileTypes:
+    - ckt
+    - sp
+    - net
+    - cir
+    - cirx
+    - mod
+    - mdl
+    - lib
+    - sub
+    - scs
+name: SPICE
+patterns:
+    -
+        comment: 'General SPICE Comments'
+        match: '^[ \t]*\*.*'
+        name: comment.line.character.sp
+    -
+        comment: 'SPECTRE|HSPICE comments'
+        match: '^[ \t]*//.*'
+        name: comment.line.character.sp
+    -
+        begin: \;
+        comment: 'PSPICE|NGSPIE inline comment'
+        end: $
+        name: comment.line.character.sp
+    -
+        begin: \$
+        comment: 'NGSPICE inline comment'
+        end: $
+        name: comment.line.character.sp
+    -
+        begin: '\'''
+        comment: 'Single quotes'
+        end: '\'''
+        name: string.quoted.single.sp
+    -
+        begin: '\"'
+        comment: 'Double quotes'
+        end: '\"'
+        name: string.quoted.double.sp
+    -
+        comment: Devices
+        match: '^[\s]*(?i:c|d|j|k|l|m|n|o|p|q|r|s|t|u|w|y|z)[a-zA-Z0-9_@]+'
+        name: entity.name.function.sp
+    -
+        comment: Sources
+        match: '^[\s]*(?i:b|e|f|g|h|v|i)[a-zA-Z0-9_@]+'
+        name: entity.name.type.sp
+    -
+        comment: Sub-circuits
+        match: '^[\s]*(?i:a|x)[a-zA-Z0-9_@]+'
+        name: entity.other.attribute-name
+    -
+        captures:
+            '2':
+                name: keyword.operator.expression.sp
+        comment: Functions
+        match: '([\s])((?i:abs|acos|asin|atan|cos|cosh|db|dc|exp|int|log|log10|lv|lx|max|min|pow|pulse|pwl|pwr|sgn|sign|sin|sinh|sqrt|tan|tanh))([=\()]|[\s])'
+    -
+        captures:
+            '0':
+                name: keyword.control.sp
+        comment: 'Command Parameters'
+        match: '([\s])((?i:deriv|find|targ|tran|trig|when))[\s]*[=\()]'
+    -
+        captures:
+            '1':
+                name: keyword.control.sp
+            '2':
+                name: string.quoted.double.sp
+        comment: 'SPICE commands'
+        match: '^[\s]*([\.]?(?i:include))[\s]+(.*)$'
+    -
+        captures:
+            '1':
+                name: keyword.control.sp
+            '2':
+                name: keyword.operator.expression.sp
+        comment: 'SPICE commands'
+        match: '^[\s]*([\.]?(?i:subckt|ends))[\s]+([\w]+)'
+    -
+        captures:
+            '2':
+                name: keyword.control.sp
+            '3':
+                name: keyword.control.sp
+        comment: 'SPICE commands'
+        match: '([\s])((?i:params))[\s]*(\:)'
+    -
+        captures:
+            '1':
+                name: keyword.control.sp
+        comment: 'SPICE commands'
+        match: '^[\s]*([\.]?(?i:tran|load|to|tf|temp|step|connect|statistics|simulator|set|sens|section|save|process|probe|print|plot|parameters|param|option|global|op|noise|model|measure|meas|lib|let|ic|from|four|endsection|endif|ends|endl|endc|end|disto|control|alter|dc|ac|if|elseif|else))'
+    -
+        comment: 'SPICEOPUS specific commands'
+        match: '^[\s]*([\.]?(?i:destroy))'
+        name: keyword.control.sp
+    -
+        comment: 'Break line symbol at begin of line'
+        match: '^[ \t]*\+'
+        name: string.quoted.single.sp
+    -
+        comment: 'At end of line'
+        match: '\+[ \t]$'
+        name: string.quoted.single.sp
+scopeName: source.sp
+uuid: b46f7485-a428-48e8-a1f8-05e3afb64e0a
