@@ -2,7 +2,7 @@
     "name": "vscode-spice-support",
     "displayName": "SPICE - Language Support",
     "description": "Language support for various flavors of SPICE",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "bzisjo",
     "author": {
         "name": "Jonathan Wang",
@@ -28,20 +28,40 @@
         "Snippets"
     ],
     "contributes": {
-        "languages": [{
-            "id": "spice",
-            "aliases": ["SPICE", "spice"],
-            "extensions": [".ckt",".sp",".net",".cir",".cirx",".mod",".mdl",".lib",".sub",".scs"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "spice",
-            "scopeName": "source.sp",
-            "path": "./syntaxes/SPICE.tmLanguage"
-        }],
-        "snippets": [{
+        "languages": [
+            {
+                "id": "spice",
+                "aliases": [
+                    "SPICE",
+                    "spice"
+                ],
+                "extensions": [
+                    ".ckt",
+                    ".sp",
+                    ".net",
+                    ".cir",
+                    ".cirx",
+                    ".mod",
+                    ".mdl",
+                    ".lib",
+                    ".sub",
+                    ".scs"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "spice",
+                "scopeName": "source.sp",
+                "path": "./syntaxes/SPICE.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
                 "language": "spice",
                 "path": "./snippets/snippets.json"
-        }]
+            }
+        ]
     }
 }
