@@ -36,5 +36,10 @@
         "prefix": ".elseif",
         "body": ".elseif (${1:condition})\n\t${2:statement_block1}",
         "description": "Elseif statement"
+    },
+    "Library Declaration": {
+        "prefix": ".lib",
+        "body": ".lib ${1:lib}\n${2:contents}\n.endl $1",
+        "description": "Elseif statement"
     }
 }
