@@ -144,7 +144,7 @@
         <key>comment</key>
         <string>SPICE commands</string>
         <key>match</key>
-        <string>^[\s]*([\.]?(?i:include))[\s]+(.*)$</string>
+        <string>^[\s]*([\.]?(?i:include|inc))[\s]+(.*)$</string>
       </dict>
       <dict>
         <key>captures</key>
@@ -196,7 +196,7 @@
         <key>comment</key>
         <string>SPICE commands</string>
         <key>match</key>
-        <string>^[\s]*([\.]?(?i:tran|load|to|tf|temp|step|connect|statistics|simulator|set|sens|section|save|process|probe|print|plot|parameters|param|option|global|op|noise|model|measure|meas|lib|let|ic|from|four|endsection|endif|ends|endl|endc|end|disto|control|alter|dc|ac|if|elseif|else))</string>
+        <string>^[\s]*([\.]?(?i:tran|load|to|tf|temp|step|connect|statistics|simulator|set|sens|section|save|process|probe|print|plot|parameters|param|option|global|op|noise|model|measure|meas|lib|let|ic|from|four|endsection|endif|ends|endl|endc|end|disto|control|alter|dc|ac|if|elseif|else|hdl))</string>
       </dict>
       <dict>
         <key>comment</key>

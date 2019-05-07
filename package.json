@@ -14,7 +14,7 @@
         "languages": [{
             "id": "spice",
             "aliases": ["SPICE", "spice"],
-            "extensions": [".ckt",".sp",".net",".cir",".mod",".mdl",".lib",".sub",".scs"],
+            "extensions": [".ckt",".sp",".net",".cir",".cirx",".mod",".mdl",".lib",".sub",".scs"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
@@ -22,11 +22,9 @@
             "scopeName": "source.sp",
             "path": "./syntaxes/SPICE.tmLanguage"
         }],
-        "snippets": [
-            {
+        "snippets": [{
                 "language": "spice",
                 "path": "./snippets/snippets.json"
-            }
-        ]
+        }]
     }
 }

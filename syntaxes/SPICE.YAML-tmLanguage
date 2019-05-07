@@ -70,7 +70,7 @@ patterns:
             '2':
                 name: string.quoted.double.sp
         comment: 'SPICE commands'
-        match: '^[\s]*([\.]?(?i:include))[\s]+(.*)$'
+        match: '^[\s]*([\.]?(?i:include|inc))[\s]+(.*)$'
     -
         captures:
             '1':
@@ -92,7 +92,7 @@ patterns:
             '1':
                 name: keyword.control.sp
         comment: 'SPICE commands'
-        match: '^[\s]*([\.]?(?i:tran|load|to|tf|temp|step|connect|statistics|simulator|set|sens|section|save|process|probe|print|plot|parameters|param|option|global|op|noise|model|measure|meas|lib|let|ic|from|four|endsection|endif|ends|endl|endc|end|disto|control|alter|dc|ac|if|elseif|else))'
+        match: '^[\s]*([\.]?(?i:tran|load|to|tf|temp|step|connect|statistics|simulator|set|sens|section|save|process|probe|print|plot|parameters|param|option|global|op|noise|model|measure|meas|lib|let|ic|from|four|endsection|endif|ends|endl|endc|end|disto|control|alter|dc|ac|if|elseif|else|hdl))'
     -
         comment: 'SPICEOPUS specific commands'
         match: '^[\s]*([\.]?(?i:destroy))'
