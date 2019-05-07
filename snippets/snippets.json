@@ -7,5 +7,34 @@
             ".ends $1"
         ],
         "description": "Subcircuit"
+    },
+    "Parameter": {
+        "prefix": ".par",
+        "body": [
+            ".param ${1:name} = ${2:value}"
+        ],
+        "description": "Parameter"
+    },
+    "Initial Condition": {
+        "prefix": ".ic",
+        "body": [
+            ".ic ${1|v,i|}(${2:node}) = ${3:value}"
+        ],
+        "description": "Initial condition"
+    },
+    "If Statement": {
+        "prefix": ".if",
+        "body": ".if (${1:condition})\n\t${2:statement_block}\n.endif",
+        "description": "If statement"
+    },
+    "If/Else Statement": {
+        "prefix": ".if",
+        "body": ".if (${1:condition})\n\t${2:statement_block1}\n.else\n\t${3:statement_block2}\n.endif",
+        "description": "If/Else statement"
+    },
+    "Elseif Statement": {
+        "prefix": ".elseif",
+        "body": ".elseif (${1:condition})\n\t${2:statement_block1}",
+        "description": "Elseif statement"
     }
 }
