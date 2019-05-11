@@ -2,7 +2,7 @@
     "name": "vscode-spice-support",
     "displayName": "SPICE - Language Support",
     "description": "Language support for various flavors of SPICE",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "bzisjo",
     "author": {
         "name": "Jonathan Wang",
