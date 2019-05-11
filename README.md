@@ -8,3 +8,5 @@ The snippets are a work in progress, and I plan to only add new ones as I come a
 - Comment **toggle**
 - Syntax Highlighting (for reference, see [leoheck/sublime-spice](https://github.com/leoheck/sublime-spice))
 - Snippets (work in progress)
+    - Basic .ac/.dc/.tran
+    - .meas rise/fall/delay

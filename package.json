@@ -16,7 +16,8 @@
         "spice",
         "syntax",
         "highlighting",
-        "circuit"
+        "circuit",
+        "snippets"
     ],
     "icon": "icon.gif",
     "repository": {
@@ -24,7 +25,7 @@
         "url": "https://github.com/bzisjo/vscode-spice-support"
     },
     "categories": [
-        "Programming Languages",
+        "Languages",
         "Snippets"
     ],
     "contributes": {
@@ -61,6 +62,10 @@
             {
                 "language": "spice",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "spice",
+                "path": "./snippets/snippets_meas.json"
             }
         ]
     }
