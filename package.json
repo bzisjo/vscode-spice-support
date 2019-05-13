@@ -46,7 +46,8 @@
                     ".mdl",
                     ".lib",
                     ".sub",
-                    ".scs"
+                    ".scs",
+                    ".inc"
                 ],
                 "configuration": "./language-configuration.json"
             }

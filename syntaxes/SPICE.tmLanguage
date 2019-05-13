@@ -14,6 +14,7 @@
       <string>lib</string>
       <string>sub</string>
       <string>scs</string>
+      <string>inc</string>
     </array>
     <key>name</key>
     <string>SPICE</string>
